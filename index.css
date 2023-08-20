@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Lilita+One&family=Poppins:wght@200;300;400;500;800&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+#container{
+    min-height:100vh;
+    background-color:#36a8f5;
+    background-size: cover;
+    overflow:hidden;
+    border-bottom:8px solid blueviolet;
+}
+#bg{
+    width:500px;
+}
+#content{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: poppins;
+    color:whitesmoke;
+    min-height:100vh;
+    font-size:30px;
+    text-align: center;
+}
+#nav-links{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image:url('background.png');
+    width:80%;
+    position:absolute;
+    left:10%;
+    border-radius:15px;
+    font-family:poppins;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    top:2%;
+    font-size: 100%;
+}
+#nav-links img{
+    mix-blend-mode: multiply;
+    width:10%;
+}
+a{
+    text-decoration: none;
+    margin-right: 10px;
+}
+#players{
+    border-bottom:8px solid blueviolet;
+    height:auto;
+    padding:0px 10px;
+    background-color:#36a8f5;
+    background-size:cover;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.player{
+    width:350px;
+    height:350px;
+    text-align: center;
+    border-radius: 15px;
+    background-color:antiquewhite;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.15), 0 2px 2px rgba(0,0,0,0.15), 0 4px 4px rgba(0,0,0,0.15), 0 8px 8px rgba(0,0,0,0.15);
+    margin:20px 0px;
+}
+.info{
+    padding:30px;
+    height:106px;
+    border-radius: 15px;
+    background-color: rgba(20, 20, 214, 0.6);
+}
+.player img{
+    width:100%;
+    background-color: antiquewhite;
+    border-radius: 15px;
+}
+#scorecard{
+    height:auto;
+    background-color:#36a8f5;
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px;
+    border-bottom:8px solid blueviolet;
+}
+table,td,th{
+    border:1px solid black;
+    border-collapse: collapse;
+}
+td{
+    padding:10px;
+}
+th{
+    background-color: blueviolet;
+}
+#events{
+    height: auto;
+    width:auto;
+    background-color:#36a8f5;
+    background-size: cover;
+    border-bottom:8px solid blueviolet;
+}
+.event{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:30px;
+    text-align:center;
+}
+.event h2{
+    margin-bottom:20px;
+}
+.event img{
+    margin-bottom: 20px;
+}
+.event h4{
+    width:80%;
+}
+.event img{
+    width:50%;
+    border-radius: 20px;
+}
+.twitter-tweet{
+    width:auto;
+    margin-top:20px;
+}
+.tweet{
+    text-align:center;
+    padding:10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tweet h2{ 
+    padding:30px;
+}
+.tweet h4{
+    padding:30px;
+    text-align: center;
+}
+#abouts{
+    background-color:#36a8f5;
+    background-size: cover;
+    min-height:80vh;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom:8px solid blueviolet;
+}
+#about{
+    width:80%;
+
+}
+#about h4,#about h5{
+    padding:20px 0px;
+}
+footer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding:20px;
+    background-image: url('background.png');
+}
+
+
+
+
+
+
+
+
+
+
+
+/*****************************************media query*******************************************/
+@media only screen and (max-width:770px){
+    #bg{
+        width:300px;
+    }
+    #content{
+        font-size:20px;
+    }
+    #scorecard{
+        zoom:60%;
+    }
+    .event img{
+        width:70%;
+    }
+    #players{
+        zoom:60%;
+    }
+    
+}
+
+
+
+
+
+/***************************************media query*********************************************/
+@media only screen and (max-width:500px){
+    #nav-links{
+        top:10%;
+        zoom:65%;
+        width:90%;
+        left:5%;
+        font-size:110%;
+        padding:20px 0px;
+    }
+    #bg{
+        margin-bottom:30px;
+    }
+    #content{
+        flex-direction: column-reverse;
+        justify-content: center;
+        font-size:15px;
+    }
+    #scorecard{
+        zoom:50%;
+    }
+    .event img{
+        width:70%;
+    }
+    #players{
+        zoom:30%;
+    }
+}
+
+
+
+@media only screen and (max-width:342px){
+    blockquote{
+        position:absolute;
+        right:20px;
+    }
+    .event img{
+        width:70%;
+    }
+    #players{
+        zoom:30%;
+    }
+}
