@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
+<div id="preloader"></div>
     <div id="container">
         <div id="nav-links">
                <img src="https://4.bp.blogspot.com/-jLDnMMS9__Y/UMCDfYfuM5I/AAAAAAAABS4/Zd7vlTfyfGM/s1600/ICC-Cricket-World-Cup-2011-logo.jpg">
@@ -27,7 +28,8 @@
     </div>
 
     <!------------------------------------------players section-------------------------->
-    <h1 style="text-align: center; background-color:#36a8f5; padding:40px 0px;">Players</h1>
+    <div id="slide">
+        <h1 style="padding:20px;">players</h1>
     <div id="players">
         <div class="player">
             <img src="sehwag.png" style="height:238px; width:300px;">
@@ -37,7 +39,7 @@
             </div>
         </div>
         <div class="player">
-            <img src="sachin.png" style="height:238px; width:200px; padding-top: 20px;">
+            <img src="sachin.png" style="height:238px; width:230px; padding-top: 20px;">
             <div class="info">
             <h3>Sachin Tendulkar</h3>
             <h4>Batsman</h4>
@@ -106,6 +108,7 @@
             <h4>Seam</h4>
             </div>
         </div>
+    </div>
     </div>
 
 
@@ -324,5 +327,18 @@
    <h6>contact <br>
    <a href="https://www.linkedin.com/in/sakthi-kumaran-/">Linkedin</a> </h6>
 </footer>
+
+
+
+<script>
+    var loader=document.getElementById('preloader');
+    
+    window.addEventListener("load",function(){
+        loader.style.display="none";
+    })
+
+</script>
+
+
 </body>
 </html>
